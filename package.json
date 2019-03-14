@@ -1,0 +1,26 @@
+{
+  "name": "todo_spa",
+  "version": "1.0.0",
+  "description": "TODO Simple SPA",
+  "main": "app.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewPhilippov/todo-spa.git"
+  },
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "author": "Andrew Philippov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewPhilippov/todo-spa/issues"
+  },
+  "homepage": "https://github.com/AndrewPhilippov/todo-spa#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
