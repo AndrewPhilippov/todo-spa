@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/AndrewPhilippov/todo-spa#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
   }
 }
