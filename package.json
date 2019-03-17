@@ -4,7 +4,7 @@
   "description": "TODO Simple SPA",
   "main": "app.js",
   "scripts": {
-    "test": "start"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/AndrewPhilippov/todo-spa#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.19"
   }

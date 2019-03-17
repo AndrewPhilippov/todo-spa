@@ -1,27 +1,18 @@
-const mongoose = require('mongoose');
-mongoose.set('debug', true);
+const mongoose = require("mongoose");
+mongoose.set("debug", true);
 
-const MONGO_URL = 'mongodb://Andrew:ToDoSPA1@ds113375.mlab.com:13375/todo_spa';
+const MONGO_URL = 'mongodb://localhost/todo-api';
 
-MongoClient.connect(MONGO_URL, (err, db) => {
-    if (err) {
-        return console.log(err);
-    }
-
-    // Do something with db here, like inserting a record
-    db.collection('notes').insertOne({
-            title: 'Hello MongoDB',
-            text: 'Hopefully this works!'
-        },
-        function (err, res) {
-            if (err) {
-                db.close();
-                return console.log(err);
-            }
-            // Success
-            db.close();
-        }
-    )
+mongoose.connect(MONGO_URL, {
+    useNewUrlParser: true
 });
 
+mongoose.connection.once('open', function () {
+    console.log('Connection has been made, now go and robo-tobo!!!')
+}).on('error', function (error) {
+    console.log('Connection problem: ' + error)
+})
+
 mongoose.Promise = Promise;
+
+module.exports.Todo = require('./todo');
