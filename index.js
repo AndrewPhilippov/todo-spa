@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 });
 app.use('/api/todos', todoRoutes);
 
-app.get('/routs', function (req, res) {
+app.get('/routes', function (req, res) {
     res.render('./routes/todos');
 });
 
