@@ -1,19 +1,5 @@
-*,
-*:before,
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fafafa;
-}
-
-h1 {
-    text-align: center;
-}
-
-header {
-    margin: 0 auto;
-}
+@import 'base';
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'layout';
